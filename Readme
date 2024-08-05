@@ -1,0 +1,10 @@
+The repository is the project written in Swift and SwiftUI (both) representing a Movie Database app. 
+About: 
+  The repo follows the MVVM architecture as follows:
+    1. core services
+    2. Domain model
+    3. Data Model
+    4. View Model
+    5. View Controller
+    6. View (written in SwiftUI)
+The navigation and flow is managed in Swift while UI is created in SwiftUI
