@@ -597,10 +597,11 @@
         "Country": "USA",
         "Awards": "N/A",
         "Poster": "https://m.media-amazon.com/images/M/MV5BMjI2M2U5NmQtOTBjNC00MzE1LTgwZTctNTI2YmJkZWYzMTc1XkEyXkFqcGdeQXVyMjQzNzk2ODk@._V1_SX300.jpg",
-        "Ratings": [{
-            "Source": "Internet Movie Database",
-            "Value": "8.4/10"
-        }
+        "Ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "8.4/10"
+            }
         ],
         "Metascore": "N/A",
         "imdbRating": "8.4",
