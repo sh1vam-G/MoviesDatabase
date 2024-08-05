@@ -92,7 +92,7 @@ class BaseService {
     }
     
     //if data is stored in the local then following function can be used
-    func getJSON<T>(bundleLocation: AnyObject.Type, type: T.Type, fileName: String) -> T? where T : Decodable {
+    func getData<T>(bundleLocation: AnyObject.Type, type: T.Type, fileName: String) -> T? where T : Decodable {
         if let path = Bundle(for: bundleLocation).path(forResource: fileName, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
