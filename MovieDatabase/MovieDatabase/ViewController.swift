@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MoviesDatabase
+//  MovieDatabase
 //
 //  Created by Shivam Gupta on 05/08/24.
 //
