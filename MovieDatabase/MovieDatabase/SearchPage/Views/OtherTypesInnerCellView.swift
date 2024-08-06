@@ -17,9 +17,13 @@ struct OtherTypesInnerCellView: View {
     var body: some View {
         HStack(alignment: .center) {
             Text("\(genreValue)")
-                .padding(20)
-                .padding(.leading, 40)
+                .padding(10)
+                .padding(.leading, 50)
+            Spacer()
         }
+        .background(Color(hex: "#eeeeee"))
+        .cornerRadius(10)
+        .padding(.horizontal, 40)
         .onTapGesture {
             delegate?.cellTapped(genre: genreValue, type: cellType)
         }
