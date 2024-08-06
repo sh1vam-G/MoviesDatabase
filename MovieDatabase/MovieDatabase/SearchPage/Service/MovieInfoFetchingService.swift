@@ -8,8 +8,8 @@
 import Foundation
 
 class MovieInfoFetchingService: BaseService {
-    func fetchMoviesInfo() -> [MoviesInfoDomainModel?]? {
-        let data = getData(bundleLocation: Self.self, type: [MoviesInfoDataModel?].self, fileName: "MoviesInfo")
-        return data?.map{ $0?.getMovieDomainModel() }
+    func fetchMoviesInfo() -> [MoviesInfoDomainModel]? {
+        let data = getData(bundleLocation: Self.self, type: [MoviesInfoDataModel].self, fileName: "MoviesInfo")
+        return data?.map{ $0.getMovieDomainModel() }
     }
 }

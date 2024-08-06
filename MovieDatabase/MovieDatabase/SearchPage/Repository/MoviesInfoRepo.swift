@@ -9,7 +9,7 @@ import Foundation
 
 class MoviesInfoRepo {
     var service = MovieInfoFetchingService()
-    func fetchMoviesInfo() -> [MoviesInfoDomainModel?]? {
+    func fetchMoviesInfo() -> [MoviesInfoDomainModel]? {
         return service.fetchMoviesInfo()
     }
 }
