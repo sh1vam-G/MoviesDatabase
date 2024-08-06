@@ -113,11 +113,11 @@
 		0C7321C22C612AE60087911C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				0C7321DA2C6131B00087911C /* JsonFiles */,
 				0C7321C32C612AFA0087911C /* BaseService.swift */,
 				0C7321CD2C612E260087911C /* SpinnerView.swift */,
 				0C7321CF2C612EA80087911C /* BaseViewController.swift */,
 				0C7321E02C613A320087911C /* ColorExtension+HexColor.swift */,
+				0C7321DA2C6131B00087911C /* JsonFiles */,
 			);
 			path = Common;
 			sourceTree = "<group>";
