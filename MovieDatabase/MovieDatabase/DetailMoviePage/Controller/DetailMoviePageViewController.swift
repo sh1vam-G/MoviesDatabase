@@ -8,12 +8,14 @@
 import UIKit
 import SwiftUI
 
+//MARK: view model for this controller has not been created separately because reponsibilities are less over the controller in present scenario. If scope increases then ViewModel can be added easily
 class DetailMoviePageViewController: UIViewController {
 
     var movie: MoviesInfoDomainModel?
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
+        self.title = movie?.title ?? String()
     }
     
     convenience init(movie: MoviesInfoDomainModel?) {
@@ -37,5 +39,4 @@ class DetailMoviePageViewController: UIViewController {
             ])
         }
     }
-
 }

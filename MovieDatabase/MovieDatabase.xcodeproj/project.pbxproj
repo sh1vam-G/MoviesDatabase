@@ -97,10 +97,10 @@
 		0C7321AD2C6124660087911C /* MovieDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				0C7321C22C612AE60087911C /* Common */,
+				0C7321C52C612B0E0087911C /* SearchPage */,
 				0C7321F52C6184E40087911C /* MovieListPage */,
 				0C7321E82C6174310087911C /* DetailMoviePage */,
-				0C7321C52C612B0E0087911C /* SearchPage */,
-				0C7321C22C612AE60087911C /* Common */,
 				0C7321AE2C6124660087911C /* AppDelegate.swift */,
 				0C7321B02C6124660087911C /* SceneDelegate.swift */,
 				0C7321B72C6124690087911C /* Assets.xcassets */,
