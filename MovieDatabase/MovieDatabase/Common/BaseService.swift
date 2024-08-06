@@ -95,8 +95,8 @@ class BaseService {
     func getData<T>(bundleLocation: AnyObject.Type, type: T.Type, fileName: String) -> T? where T : Decodable {
         if let path = Bundle(for: bundleLocation).path(forResource: fileName, ofType: "json") {
             do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
-                let moreMenuDataModel = try JSONDecoder().decode(T.self, from: data)
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options:.mappedIfSafe)
+                let moreMenuDataModel: T? = try JSONDecoder().decode(T.self, from: data)
                 return moreMenuDataModel
             } catch let error {
                 fatalError("Unable to get data from file at \(path), failed because \(error), file: \(fileName)")
